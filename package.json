@@ -1,0 +1,52 @@
+{
+  "name": "@silvenon/blog-utils",
+  "description": "Utilities for common blogging patterns",
+  "license": "MIT",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --report-unused-disable-directives",
+    "prepublishOnly": "yarn lint && yarn test"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "pre-commit": "lint-staged",
+    "pre-push": "yarn prepublishOnly"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "remark-excerpt": "^1.0.0-beta.1",
+    "remark-frontmatter": "^1.3.1",
+    "remark-html": "^9.0.0",
+    "remark-mdx": "^1.0.18",
+    "remark-mdx-remove-exports": "^1.0.18",
+    "remark-mdx-remove-imports": "^1.0.18",
+    "remark-parse": "^6.0.3",
+    "remark-stringify": "^6.0.4",
+    "to-vfile": "^5.0.2",
+    "unified": "^7.1.0",
+    "unist-util-remove": "^1.0.1",
+    "unist-util-visit": "^1.4.0",
+    "yaml": "^1.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-jest": "^22.5.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^2.2.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.1.6",
+    "prettier": "^1.17.0"
+  }
+}

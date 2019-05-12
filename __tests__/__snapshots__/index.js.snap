@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`extractPostMetadata extracts metadata for MDX all 1`] = `
+Object {
+  "date": "1859-11-24",
+  "excerpt": "<blockquote>
+<p>We all descended from monkeys, yo.</p>
+<p>--Charles Darwin</p>
+</blockquote>
+",
+  "frontmatter": Object {
+    "author": "Charles Darwin",
+    "title": "On the Origin of Species",
+  },
+}
+`;
+
+exports[`extractPostMetadata extracts metadata for MDX only date 1`] = `
+Object {
+  "date": "1859-11-24",
+}
+`;
+
+exports[`extractPostMetadata extracts metadata for MDX only excerpt 1`] = `
+Object {
+  "excerpt": "<blockquote>
+<p>We all descended from monkeys, yo.</p>
+<p>--Charles Darwin</p>
+</blockquote>
+",
+}
+`;
+
+exports[`extractPostMetadata extracts metadata for MDX only frontmatter 1`] = `
+Object {
+  "frontmatter": Object {
+    "author": "Charles Darwin",
+    "title": "On the Origin of Species",
+  },
+}
+`;
+
+exports[`extractPostMetadata extracts metadata for Markdown all 1`] = `
+Object {
+  "date": "1859-11-24",
+  "excerpt": "<blockquote>
+<p>We all descended from monkeys, yo.</p>
+<p>--Charles Darwin</p>
+</blockquote>
+",
+  "frontmatter": Object {
+    "author": "Charles Darwin",
+    "title": "On the Origin of Species",
+  },
+}
+`;
+
+exports[`extractPostMetadata extracts metadata for Markdown only date 1`] = `
+Object {
+  "date": "1859-11-24",
+}
+`;
+
+exports[`extractPostMetadata extracts metadata for Markdown only excerpt 1`] = `
+Object {
+  "excerpt": "<blockquote>
+<p>We all descended from monkeys, yo.</p>
+<p>--Charles Darwin</p>
+</blockquote>
+",
+}
+`;
+
+exports[`extractPostMetadata extracts metadata for Markdown only frontmatter 1`] = `
+Object {
+  "frontmatter": Object {
+    "author": "Charles Darwin",
+    "title": "On the Origin of Species",
+  },
+}
+`;
