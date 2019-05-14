@@ -2,6 +2,11 @@
   "name": "@silvenon/blog-utils",
   "description": "Utilities for common blogging patterns",
   "license": "MIT",
+  "author": {
+    "name": "Matija Marohnić",
+    "email": "matija.marohnic@gmail.com",
+    "url": "https://silvenon.com"
+  },
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
