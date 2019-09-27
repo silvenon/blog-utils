@@ -36,7 +36,7 @@
     "to-vfile": "^5.0.2",
     "unified": "^7.1.0",
     "unist-util-remove": "^1.0.1",
-    "unist-util-visit": "^1.4.0",
+    "unist-util-visit": "^2.0.0",
     "yaml": "^1.5.1"
   },
   "devDependencies": {
