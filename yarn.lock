@@ -136,10 +136,10 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.4.4":
-  version "7.4.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.4.tgz#dc2e34982eb236803aa27a07fea6857af1b9171d"
-  integrity sha512-w0+uT71b6Yi7i5SE0co4NioIpSYS6lLiXvCzWzGSKvpK5vdQtCbICHMj+gbAKAOtxiV6HsVh/MBdaF9EQ6faSg==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.5.5":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.2.tgz#c3d6e41b304ef10dcf13777a33e7694ec4a9a6dd"
+  integrity sha512-EXxN64agfUqqIGeEjI5dL5z0Sw0ZwWo1mLTi4mQowCZ42O59b7DRpZAnTC6OqdF28wMBMFKNb/4uFGrVaigSpg==
   dependencies:
     regenerator-runtime "^0.13.2"
 
@@ -3021,12 +3021,7 @@ lodash.unescape@4.0.1:
   resolved "https://registry.yarnpkg.com/lodash.unescape/-/lodash.unescape-4.0.1.tgz#bf2249886ce514cda112fae9218cdc065211fc9c"
   integrity sha1-vyJJiGzlFM2hEvrpIYzcBlIR/Jw=
 
-lodash@^4.17.11:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
-
-lodash@^4.17.13:
+lodash@^4.17.11, lodash@^4.17.13:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
@@ -5217,11 +5212,11 @@ yallist@^3.0.0, yallist@^3.0.2:
   integrity sha512-S+Zk8DEWE6oKpV+vI3qWkaK+jSbIK86pCwe2IF/xwIpQ8jEuxpw9NyaGjmp9+BoJv5FV2piqCDcoCtStppiq2A==
 
 yaml@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.5.1.tgz#e8201678064fbcfef6afe4122ef802573b6cade8"
-  integrity sha512-btfJvMOgVthGZSgHBMrDkLuQu4YxOycw6kwuC67cUEOKJmmNozjIa02eKvuSq7usqqqpwwCvflGTF6JcDvSudw==
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.7.0.tgz#b4cddb83490051e6c4b6ffe2bb08221c23f4c6cf"
+  integrity sha512-BEXCJKbbJmDzjuG4At0R4nHJKlP81hxoLQqUCaxzqZ8HHgjAlOXbiOHVCQ4YuQqO/rLR8HoQ6kxGkYJ3tlKIsg==
   dependencies:
-    "@babel/runtime" "^7.4.4"
+    "@babel/runtime" "^7.5.5"
 
 yargs-parser@^11.1.1:
   version "11.1.1"
