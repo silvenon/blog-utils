@@ -1,14 +1,5 @@
 const { extractPostMetadata } = require('../')
-const toVFile = require('to-vfile')
-
-const getFileMd = () =>
-  toVFile.readSync(
-    `${__dirname}/__fixtures__/1859-11-24-on-the-origin-of-species.md`,
-  )
-const getFileMdx = () =>
-  toVFile.readSync(
-    `${__dirname}/__fixtures__/1859-11-24-on-the-origin-of-species.mdx`,
-  )
+const { getFileMd, getFileMdx } = require('../test/utils')
 
 describe('extractPostMetadata', () => {
   it('takes a file path', async () => {
