@@ -109,6 +109,29 @@ const format = 'toml'
 
 Supports both YAML and TOML.
 
+### `remark-save-frontmatter`
+
+This plugin stores parsed frontmatter in file's `data` property, so you can retrieve this data after removing frontmatter.
+
+```js
+const remark = require('remark')
+const detectFrontmatter = require('remark-frontmatter')
+const saveFrontmatter = require('@silvenon/blog-utils/remark-save-frontmatter')
+const removeFrontmatter = require('@silvenon/blog-utils/remark-remove-frontmatter')
+
+const format = 'toml'
+
+const file = remark()
+  .use(detectFrontmatter, { preset: format })
+  .use(saveFrontmatter, format)
+  .use(removeFrontmatter, format)
+  .processSync()
+
+console.log(file.data) // { ... }
+```
+
+Supports both YAML and TOML.
+
 ### `remark-smartypants`
 
 If you want to process Markdown or MDX with [SmartyPants] you can use this plugin. It uses [retext-smartypants] under the hood, so it takes the same options.
