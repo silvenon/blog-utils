@@ -4,7 +4,6 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
-    "plugin:jest/recommended",
     "plugin:prettier/recommended",
   ],
   env: {
@@ -13,10 +12,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: "__tests__/**/*",
-      env: {
-        jest: true,
-      },
+      files: "*.test.js",
+      extends: [
+        "plugin:jest/recommended",
+      ],
     },
   ],
 }
