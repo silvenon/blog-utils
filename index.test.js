@@ -1,5 +1,5 @@
-const { extractPostMetadata } = require('../')
-const { getFileMd, getFileMdx } = require('../test/utils')
+const { extractPostMetadata } = require('./')
+const { getFileMd, getFileMdx } = require('./test/utils')
 
 describe('extractPostMetadata', () => {
   it('takes a file path', async () => {
