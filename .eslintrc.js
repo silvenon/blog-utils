@@ -1,21 +1,21 @@
-{
-  "parserOptions": {
-    "ecmaVersion": 9,
+module.exports = {
+  parserOptions: {
+    ecmaVersion: 9,
   },
-  "extends": [
+  extends: [
     "eslint:recommended",
     "plugin:jest/recommended",
     "plugin:prettier/recommended",
   ],
-  "env": {
+  env: {
     "es6": true,
     "node": true,
   },
-  "overrides": [
+  overrides: [
     {
-      "files": "__tests__/**/*",
-      "env": {
-        "jest": true,
+      files: "__tests__/**/*",
+      env: {
+        jest: true,
       },
     },
   ],
