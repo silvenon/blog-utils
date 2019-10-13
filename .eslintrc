@@ -8,6 +8,7 @@
     "plugin:prettier/recommended",
   ],
   "env": {
+    "es6": true,
     "node": true,
   },
   "overrides": [

@@ -107,9 +107,28 @@ const removeFrontmatter = require('@silvenon/blog-utils/remark-remove-frontmatte
 
 Currently only YAML frontmatter is supported. Support for TOML and custom formats is coming.
 
+### `remark-smartypants`
+
+If you want to process Markdown or MDX with [SmartyPants] you can use this plugin. It uses [retext-smartypants] under the hood, so it takes the same options.
+
+```js
+const remark = require('remark')
+const smartypants = require('@silvenon/blog-utils/remark-smartypants')
+
+remark()
+  .use(smartypants, {
+    // options for retext-smartypants
+  })
+  .processSync(`# Title with "quotes"`)
+```
+
+This plugin exists because it's not possible to use retext-smartypants without converting the tree to retext, so instead remark-smartypants applies retext-smartypants to every text node, enabling us to continue using the remark tree.
+
 [gatsby]: https://www.gatsbyjs.org
 [react-static]: https://react-static.js.org
 [vfile]: https://github.com/vfile/vfile
 [unified]: https://unified.js.org
 [MDX]: https://github.com/mdx-js/mdx
 [remark-frontmatter]: https://github.com/remarkjs/remark-frontmatter
+[SmartyPants]: https://daringfireball.net/projects/smartypants/
+[retext-smartypants]: https://github.com/retextjs/retext-smartypants
