@@ -86,6 +86,8 @@ You might want to use this to strip frontmatter away from files so it doesn't ge
 const detectFrontmatter = require('remark-frontmatter')
 const removeFrontmatter = require('@silvenon/blog-utils/remark-remove-frontmatter')
 
+const format = 'toml'
+
 // somewhere in the depths of a wepback config...
 
 {
@@ -96,8 +98,8 @@ const removeFrontmatter = require('@silvenon/blog-utils/remark-remove-frontmatte
       '@mdx-js/loader',
       options: {
         remarkPlugins: [
-          detectFrontmatter,
-          removeFrontmatter,
+          [detectFrontmatter, { preset: format }],
+          [removeFrontmatter, format],
         ],
       },
     },
@@ -105,7 +107,7 @@ const removeFrontmatter = require('@silvenon/blog-utils/remark-remove-frontmatte
 }
 ```
 
-Currently only YAML frontmatter is supported. Support for TOML and custom formats is coming.
+Supports both YAML and TOML.
 
 ### `remark-smartypants`
 
