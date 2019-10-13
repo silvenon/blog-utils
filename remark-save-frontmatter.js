@@ -1,10 +1,16 @@
 const visit = require('unist-util-visit')
 const yaml = require('yaml')
+const toml = require('toml')
 
-module.exports = function saveFrontmatter() {
+const parser = {
+  yaml,
+  toml,
+}
+
+module.exports = function saveFrontmatter(format = 'yaml') {
   return function transformer(tree, file) {
-    visit(tree, 'yaml', node => {
-      file.data.frontmatter = yaml.parse(node.value)
+    visit(tree, format, node => {
+      file.data.frontmatter = parser[format].parse(node.value)
     })
   }
 }
