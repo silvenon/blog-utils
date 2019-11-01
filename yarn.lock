@@ -4329,9 +4329,9 @@ retext-latin@^2.0.3:
     unherit "^1.0.4"
 
 retext-smartypants@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/retext-smartypants/-/retext-smartypants-3.0.2.tgz#7e499ae914883e0d117ee9e983ee396621e0cb2a"
-  integrity sha512-38v5WiDbn1+syowa24Rnv5raCPHxVy/gEGqfj+K/8piEsnuKwIgPtDwumNwKaedTj3SaFbK5OkWcuwZYxep2jw==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/retext-smartypants/-/retext-smartypants-3.0.3.tgz#9c982dcc210ae3bb36f4bc46aae802798fce43f9"
+  integrity sha512-/0fIipYayOvvucn3yjxvWwyT9P6p8gbpqdqUQNs1+L7av2hxatmiA9sk+fygJSDn5OXRyhBzcezvTbEmEabfIQ==
   dependencies:
     nlcst-to-string "^2.0.0"
     unist-util-visit "^1.0.0"
