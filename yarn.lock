@@ -3795,9 +3795,9 @@ remark-html@^10.0.0:
     xtend "^4.0.1"
 
 remark-mdx-remove-exports@^1.0.18:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/remark-mdx-remove-exports/-/remark-mdx-remove-exports-1.5.3.tgz#2d37de545c7723e0f076d0a1843eef3048a90cc3"
-  integrity sha512-HgB9VJQtN0SVTw92OgrUqozTl+Kq5Kebnea31SZGeBObTp+hSKYeIPiVYak42HQ+NmCnS5rEShtpLEtDbn3X8g==
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/remark-mdx-remove-exports/-/remark-mdx-remove-exports-1.5.5.tgz#3633dbcb50286b1bac6672f82a54b2d90e4c3201"
+  integrity sha512-VTGybnP8Q97M6G/1C/YiHoXsCFapXTECpxKPB39gnuP1IF4nR+M1tTKy/aBZdKefE93mQJ9QSDXCzRBXPteEjA==
   dependencies:
     unist-util-remove "1.0.3"
 
