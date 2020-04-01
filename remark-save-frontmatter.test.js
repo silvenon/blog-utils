@@ -13,7 +13,7 @@ const processor = unified()
   .use(removeFrontmatter)
   .use(stringify)
 
-it('saves parsed frontmatter', done => {
+it('saves parsed frontmatter', (done) => {
   expect.hasAssertions()
   processor.process(getFileMd(), (err, file) => {
     if (err != null) return done(err)

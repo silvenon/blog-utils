@@ -11,7 +11,7 @@ const processor = unified()
   .use(removeFrontmatter)
   .use(stringify)
 
-it('removes frontmatter', done => {
+it('removes frontmatter', (done) => {
   expect.hasAssertions()
   processor.process(getFileMd(), (err, file) => {
     if (err != null) return done(err)
