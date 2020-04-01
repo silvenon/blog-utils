@@ -11,7 +11,7 @@ module.exports = function remarkSmartypants(options) {
     .use(stringify)
 
   return function transformer(tree) {
-    visit(tree, 'text', node => {
+    visit(tree, 'text', (node) => {
       node.value = String(processor.processSync(node.value))
     })
   }

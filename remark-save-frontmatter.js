@@ -9,7 +9,7 @@ const parser = {
 
 module.exports = function saveFrontmatter(format = 'yaml') {
   return function transformer(tree, file) {
-    visit(tree, format, node => {
+    visit(tree, format, (node) => {
       file.data.frontmatter = parser[format].parse(node.value)
     })
   }
