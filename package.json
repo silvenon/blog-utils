@@ -40,7 +40,7 @@
     "remark-parse": "^8.0.0",
     "remark-stringify": "^8.0.0",
     "retext-latin": "^2.0.3",
-    "retext-smartypants": "^3.0.2",
+    "retext-smartypants": "^4.0.0",
     "retext-stringify": "^2.0.3",
     "to-vfile": "^6.0.0",
     "toml": "^3.0.0",
