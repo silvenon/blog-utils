@@ -63,4 +63,6 @@ describe('extractPostMetadata', () => {
       })
     })
   })
+
+  it.todo('supports other frontmatter formats')
 })
