@@ -17,13 +17,14 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "husky": {
-    "pre-commit": "lint-staged",
-    "pre-push": "yarn prepublishOnly"
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn prepublishOnly"
+    }
   },
   "prettier": {
     "semi": false,
