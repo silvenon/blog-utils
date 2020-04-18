@@ -5,14 +5,14 @@ const getFileMd = () =>
   toVFile.readSync(
     path.resolve(
       __dirname,
-      '../__fixtures__/1859-11-24-on-the-origin-of-species.md',
+      '../__fixtures__/1859-11-24-post.md',
     ),
   )
 const getFileMdx = () =>
   toVFile.readSync(
     path.resolve(
       __dirname,
-      '../__fixtures__/1859-11-24-on-the-origin-of-species.mdx',
+      '../__fixtures__/1859-11-24-post.mdx',
     ),
   )
 
