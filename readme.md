@@ -86,7 +86,7 @@ You might want to use this to strip frontmatter away from files so it doesn't ge
 const detectFrontmatter = require('remark-frontmatter')
 const removeFrontmatter = require('@silvenon/blog-utils/remark-remove-frontmatter')
 
-const format = 'toml'
+const FRONTMATTER_FORMAT = 'toml'
 
 // somewhere in the depths of a wepback config...
 
@@ -98,8 +98,8 @@ const format = 'toml'
       loader: '@mdx-js/loader',
       options: {
         remarkPlugins: [
-          [detectFrontmatter, { preset: format }],
-          [removeFrontmatter, format],
+          [detectFrontmatter, { preset: FRONTMATTER_FORMAT }],
+          [removeFrontmatter, FRONTMATTER_FORMAT],
         ],
       },
     },
@@ -119,12 +119,12 @@ const detectFrontmatter = require('remark-frontmatter')
 const saveFrontmatter = require('@silvenon/blog-utils/remark-save-frontmatter')
 const removeFrontmatter = require('@silvenon/blog-utils/remark-remove-frontmatter')
 
-const format = 'toml'
+const FRONTMATTER_FORMAT = 'toml'
 
 const file = remark()
-  .use(detectFrontmatter, { preset: format })
-  .use(saveFrontmatter, format)
-  .use(removeFrontmatter, format)
+  .use(detectFrontmatter, { preset: FRONTMATTER_FORMAT })
+  .use(saveFrontmatter, FRONTMATTER_FORMAT)
+  .use(removeFrontmatter, FRONTMATTER_FORMAT)
   .processSync()
 
 console.log(file.data) // { ... }
