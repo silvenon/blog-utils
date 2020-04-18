@@ -98,7 +98,7 @@ const FRONTMATTER_FORMAT = 'toml'
       loader: '@mdx-js/loader',
       options: {
         remarkPlugins: [
-          [detectFrontmatter, { preset: FRONTMATTER_FORMAT }],
+          [detectFrontmatter, FRONTMATTER_FORMAT],
           [removeFrontmatter, FRONTMATTER_FORMAT],
         ],
       },
@@ -122,7 +122,7 @@ const removeFrontmatter = require('@silvenon/blog-utils/remark-remove-frontmatte
 const FRONTMATTER_FORMAT = 'toml'
 
 const file = remark()
-  .use(detectFrontmatter, { preset: FRONTMATTER_FORMAT })
+  .use(detectFrontmatter, FRONTMATTER_FORMAT)
   .use(saveFrontmatter, FRONTMATTER_FORMAT)
   .use(removeFrontmatter, FRONTMATTER_FORMAT)
   .processSync()
