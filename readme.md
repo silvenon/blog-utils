@@ -65,10 +65,10 @@ Console output:
     author: 'Charles Darwin',
   },
   date: '1859-11-24',
-  excerpt: '<blockquote>
+  excerpt: `<blockquote>
 <p>We all descended from monkeys, yo.</p>
 <p>--Charles Darwin</p>
-</blockquote>',
+</blockquote>`,
 }
 ```
 
@@ -95,7 +95,7 @@ const format = 'toml'
   use: [
     'babel-loader',
     {
-      '@mdx-js/loader',
+      loader: '@mdx-js/loader',
       options: {
         remarkPlugins: [
           [detectFrontmatter, { preset: format }],
