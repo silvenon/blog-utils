@@ -7,6 +7,27 @@
     "email": "matija.marohnic@gmail.com",
     "url": "https://silvenon.com"
   },
+  "homepage": "https://github.com/silvenon/blog-utils#readme",
+  "bugs": {
+    "url": "https://github.com/silvenon/blog-utils/issues",
+    "email": "matija.marohnic@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silvenon/blog-utils.git"
+  },
+  "keywords": [
+    "blog",
+    "unified",
+    "remark",
+    "remark-plugin",
+    "plugin",
+    "markdown",
+    "mdast",
+    "frontmatter",
+    "yaml",
+    "smartypants"
+  ],
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
