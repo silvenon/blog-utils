@@ -3881,9 +3881,9 @@ remark-mdx-remove-exports@^1.0.18:
     unist-util-remove "2.0.0"
 
 remark-mdx-remove-imports@^1.0.18:
-  version "1.6.18"
-  resolved "https://registry.yarnpkg.com/remark-mdx-remove-imports/-/remark-mdx-remove-imports-1.6.18.tgz#30bc1d33a4744adca0d66c6a549bce451152ff23"
-  integrity sha512-NnFK0+CBTByjZTiUhMFOF4fYBsUo3rn/AClgJZzjGpmcxPt/dNFc97f2tuzx8UBadhi9Y7id8KWfh+FgMxd+Ug==
+  version "1.6.19"
+  resolved "https://registry.yarnpkg.com/remark-mdx-remove-imports/-/remark-mdx-remove-imports-1.6.19.tgz#081bd43b14b062e359acf6e9019725e2243b5eaa"
+  integrity sha512-+ijLwDKtp0Hk/LcKmmfbYrxZQ0hRkg605CR1eYYFK9EG575W8FrFvwYjbLRrovN9JcHSFrSIZL3W7EbpOd4umg==
   dependencies:
     unist-util-remove "2.0.0"
 
