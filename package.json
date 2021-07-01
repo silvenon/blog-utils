@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "remark-excerpt": "^1.0.0-beta.1",
-    "remark-frontmatter": "^2.0.0",
+    "remark-frontmatter": "^3.0.0",
     "remark-html": "^13.0.1",
     "remark-mdx": "^1.0.18",
     "remark-mdx-remove-exports": "^1.0.18",
