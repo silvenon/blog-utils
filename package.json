@@ -59,7 +59,7 @@
     "remark-mdx": "^1.0.18",
     "remark-mdx-remove-exports": "^1.0.18",
     "remark-mdx-remove-imports": "^1.0.18",
-    "remark-parse": "^8.0.0",
+    "remark-parse": "^9.0.0",
     "remark-stringify": "^9.0.0",
     "retext-latin": "^2.0.3",
     "retext-smartypants": "^4.0.0",
