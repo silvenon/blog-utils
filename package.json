@@ -68,7 +68,7 @@
     "toml": "^3.0.0",
     "unified": "^9.0.0",
     "unist-util-remove": "^2.0.0",
-    "unist-util-visit": "^2.0.0",
+    "unist-util-visit": "^3.1.0",
     "yaml": "^1.5.1"
   },
   "devDependencies": {
